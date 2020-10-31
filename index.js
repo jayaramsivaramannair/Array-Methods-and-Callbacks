@@ -13,6 +13,15 @@ console.log('its working');
 (e) Winner of 2014 world cup final */
 
 
+let final2014 = fifaData.filter(match => (match.Year === 2014) && (match.Stage === 'Final'));
+console.log(final2014[0]);
+
+console.log(final2014[0]["Home Team Name"]);
+console.log(final2014[0]["Away Team Name"]);
+console.log(final2014[0]["Home Team Goals"]);
+console.log(final2014[0]["Away Team Goals"]);
+console.log(final2014[0]['Win conditions'].split(" ")[0]);
+
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 
 function getFinals(/* code here */) {
